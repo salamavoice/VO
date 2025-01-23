@@ -7,14 +7,14 @@ const trackTitle = document.getElementById('track-title');
 
 // List of audio tracks
 const tracks = [
-  { title:'بودكاست تخليد لذكري جدي' ,src: 'track1.mp3' },
-  { title: ' السيدة خديجة رضي الله عنها',src: 'track2.mp3' },
-  { title: 'اعلان غير رسمي بالفصحي',src: 'track3.mp3' },
-  {title: 'اعلان غير رسمي بالعامية',src:'track4.mp3' },
-  {title: 'ملخص رواية',src: 'track5.mp3' },
-  {title: 'اعلان غير رسمي لتايجر',src: 'track6.mp3'},
-  {title: 'رد آلي',src: 'track7.mp3' }
-
+  { title: 'بودكاست تخليد لذكري جدي', src: 'track1.mp3' },
+  { title: 'السيدة خديجة رضي الله عنها', src: 'track2.mp3' },
+  { title: 'اعلان غير رسمي بالفصحي', src: 'track3.mp3' },
+  { title: 'اعلان غير رسمي بالعامية', src: 'track4.mp3' },
+  { title: 'ملخص رواية', src: 'track5.mp3' },
+  { title: 'اعلان غير رسمي (Buffalo Burger)', src: 'track6.mp3' },
+  { title: 'رد آلي', src: 'track7.mp3' },
+  { title: 'تمثيل اذاعي لدور الزوج (مسلسل شقة بن الحجة)', src: 'track9.mp3' }
 ];
 
 let currentTrack = 0;
