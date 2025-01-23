@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="header-links">
-        <img class="image" src="Portfolio Logo.jpeg" width="10%" alt="image">
+        <img id="image" src="Portfolio Logo.jpeg" width="10%" alt="image">
+        <audio id="WelcomeAudio" src="track8.mp3"></audio>
         <a href="index.html">Home</a>
         <a href="#">Video</a>
         <a href="page2.html" class="button">Contact</a>
@@ -26,12 +27,17 @@
                 </div>
             </section>
             <img class="background-image" src="Portfolio Logo.jpeg" alt="image">
-    </style>
-</head>
-<body>
-</body>
-</html>
         </div>
     </div>
+    <script>
+        document.getElementById('image').addEventListener('click', function() {
+            const audio = document.getElementById('WelcomeAudio');
+            audio.play().then(() => {
+                console.log("Audio played successfully.");
+            }).catch(error => {
+                console.error("Error playing audio", error)
+            })
+        });
+    </script>
 </body>
 </html>
