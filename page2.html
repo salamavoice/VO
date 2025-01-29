@@ -18,9 +18,15 @@
         <div class="h1">
             <h1>Videos:</h1>
             <h2>:تخليد لذكري جدي</h2>
-            <div class="video-container">
-                <video src="vid1.mp4" controls width="40%"></video>  
-            </div> 
+            <div class="video-player">
+                <video id="video" src="vid1.mp4" controls></video>
+                <div class="controls">
+                    <button id="prev-video">⏮️</button>
+                    <button id="play-pause-video">▶️</button>
+                    <button id="next-video">⏭️</button>
+                </div>
+                <p id="video-title">Video Title</p>
+            </div>
             <section>
                 <div class="section2">
                     <h1 class="section2">Shorts:</h1>

@@ -88,3 +88,71 @@ document.getElementById('image').addEventListener('click', function() {
     console.error("Error playing audio", error)
   })
 });
+
+document.getElementById('logo').addEventListener('click', function() {
+  currentTrack = 7; // Track 8 (0-based index)
+  loadTrack(currentTrack);
+  audio.play();
+  playPauseBtn.textContent = '⏸️';
+  isPlaying = true;
+});
+
+// Video player functionality
+const video = document.getElementById('video');
+const playPauseVideoBtn = document.getElementById('play-pause-video');
+const prevVideoBtn = document.getElementById('prev-video');
+const nextVideoBtn = document.getElementById('next-video');
+const videoTitle = document.getElementById('video-title');
+
+let currentVideo = 0;
+let isVideoPlaying = false;
+
+// List of video tracks
+const videos = [
+  { title: 'Video 1', src: 'vid1.mp4' }
+];
+
+// Load the current video
+function loadVideo(index) {
+  const videoTrack = videos[index];
+  video.src = videoTrack.src;
+  videoTitle.textContent = videoTrack.title;
+}
+
+// Play or Pause the video
+function togglePlayPauseVideo() {
+  if (isVideoPlaying) {
+    video.pause();
+    playPauseVideoBtn.textContent = '▶️';
+  } else {
+    video.play();
+    playPauseVideoBtn.textContent = '⏸️';
+  }
+  isVideoPlaying = !isVideoPlaying;
+}
+
+// Move to the previous video
+function playPrevVideo() {
+  currentVideo = (currentVideo - 1 + videos.length) % videos.length;
+  loadVideo(currentVideo);
+  video.play();
+  playPauseVideoBtn.textContent = '⏸️';
+  isVideoPlaying = true;
+}
+
+// Move to the next video
+function playNextVideo() {
+  currentVideo = (currentVideo + 1) % videos.length;
+  loadVideo(currentVideo);
+  video.play();
+  playPauseVideoBtn.textContent = '⏸️';
+  isVideoPlaying = true;
+}
+
+// Event Listeners for video player
+playPauseVideoBtn.addEventListener('click', togglePlayPauseVideo);
+prevVideoBtn.addEventListener('click', playPrevVideo);
+nextVideoBtn.addEventListener('click', playNextVideo);
+
+// Load the first video initially
+loadVideo(currentVideo);
