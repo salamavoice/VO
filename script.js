@@ -156,3 +156,8 @@ nextVideoBtn.addEventListener('click', playNextVideo);
 
 // Load the first video initially
 loadVideo(currentVideo);
+/* تعديل حجم الشعار في الـ Header */
+.header-links img {
+    width: 80px; /* أو القيمة التي ترغب بها */
+    height: auto; /* الحفاظ على النسبة الأصلية للعرض والارتفاع */
+}
