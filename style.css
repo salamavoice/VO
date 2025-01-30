@@ -112,7 +112,8 @@ h2 {
     }
 
     .header-links img {
-        height: 60px; /* Keep logo height */
+        height: 60px; /* Adjust logo size */
+        width: auto; /* Ensure aspect ratio is maintained */
     }
 
     .header-links a {
@@ -132,7 +133,8 @@ h2 {
     }
 
     .header-links img {
-        height: 60px; /* Keep logo height */
+        height: 50px; /* Adjust logo size for tablet */
+        width: auto; /* Ensure aspect ratio is maintained */
     }
 
     .header-links a {
@@ -152,7 +154,8 @@ h2 {
     }
 
     .header-links img {
-        height: 40px; /* Keep logo height smaller for mobile */
+        height: 40px; /* Smaller logo for mobile */
+        width: auto; /* Ensure aspect ratio is maintained */
     }
 
     .header-links a {
