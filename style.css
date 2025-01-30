@@ -275,3 +275,10 @@ video {
     width: 80px; /* أو القيمة التي ترغب بها */
     height: auto; /* الحفاظ على النسبة الأصلية للعرض والارتفاع */
 }
+/* Ensure the logo is responsive */
+.header-links img {
+    width: 100%;        /* Ensures the logo takes up the available width */
+    max-width: 120px;   /* Set a maximum width (adjust this based on your design) */
+    height: auto;       /* Maintain aspect ratio */
+}
+
