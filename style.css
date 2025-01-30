@@ -123,11 +123,6 @@ h2 {
         padding: 10px 20px; /* Maintain same padding */
         height: 80px; /* Maintain header height */
     }
-
-    .header-links img {
-        max-height: 50px; /* Adjust logo height for laptops */
-    }
-
     .header-links a {
         font-size: larger; /* Keep font size */
         margin: 0 15px; /* Keep margin */
@@ -144,10 +139,6 @@ h2 {
         height: 80px; /* Maintain header height */
     }
 
-    .header-links img {
-        max-height: 40px; /* Adjust logo height for tablets */
-    }
-
     .header-links a {
         font-size: larger; /* Keep font size */
         margin: 0 10px; /* Adjust margin for space */
@@ -162,10 +153,6 @@ h2 {
     .header-links {
         padding: 10px 20px; /* Maintain same padding */
         height: 80px; /* Maintain header height */
-    }
-
-    .header-links img {
-        max-height: 30px; /* Adjust logo height for mobile devices */
     }
 
     .header-links a {
@@ -252,3 +239,21 @@ video {
 .button:hover {
     background-color: darkblue;
 }
+/* Responsive Design */
+@media (max-width: 1200px) { /* Laptops */
+    .header-links img {
+        height: 65px;
+    }
+}
+
+@media (max-width: 768px) { /* Tablets */
+    .header-links img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Devices */
+    .header-links img {
+        height: 14vw; /* Keeps logo proportional */
+        max-height: 80px; /* Prevents excessive shrinking */
+    }
