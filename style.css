@@ -119,6 +119,7 @@ h2 {
 
     .header-links img {
         height: 60px; /* Keep logo height */
+        max-height: 50px; /* Adjust max height for laptops */
     }
 
     .header-links a {
@@ -139,6 +140,7 @@ h2 {
 
     .header-links img {
         height: 60px; /* Keep logo height */
+        max-height: 40px; /* Adjust max height for tablets */
     }
 
     .header-links a {
@@ -159,6 +161,7 @@ h2 {
 
     .header-links img {
         height: 60px; /* Keep logo height */
+        max-height: 30px; /* Adjust max height for mobile devices */
     }
 
     .header-links a {
@@ -208,6 +211,11 @@ video {
     height: 100%;
 }
 
+.header-links img {
+    height: auto;
+    max-height: 60px; /* Default max height */
+    width: auto;
+}
 
 .lobster-regular {
     text-decoration: none;
