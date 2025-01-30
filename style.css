@@ -43,6 +43,12 @@ h1 {
     background-color: white;
 }
 
+.paragraph {
+    font-size: large;
+    font-family: fantasy;
+    color: brown;
+}
+
 /* Background Image Container */
 .background-image {
     width: 100%;
@@ -112,8 +118,7 @@ h2 {
     }
 
     .header-links img {
-        height: 60px; /* Adjust logo size */
-        width: auto; /* Ensure aspect ratio is maintained */
+        height: 60px; /* Keep logo height */
     }
 
     .header-links a {
@@ -133,8 +138,7 @@ h2 {
     }
 
     .header-links img {
-        height: 50px; /* Adjust logo size for tablet */
-        width: auto; /* Ensure aspect ratio is maintained */
+        height: 60px; /* Keep logo height */
     }
 
     .header-links a {
@@ -154,8 +158,7 @@ h2 {
     }
 
     .header-links img {
-        height: 40px; /* Smaller logo for mobile */
-        width: auto; /* Ensure aspect ratio is maintained */
+        height: 60px; /* Keep logo height */
     }
 
     .header-links a {
@@ -168,11 +171,10 @@ h2 {
     }
 }
 
-/* Video Player and Video Container Adjustments */
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Maintain aspect ratio for videos */
+    padding-top: 56.25%;
     overflow: hidden;
 }
 
@@ -206,59 +208,41 @@ video {
     height: 100%;
 }
 
+
 .lobster-regular {
     text-decoration: none;
 }
 
-/* Ensure the logo is responsive */
-.header-links img {
-    width: 100%;        /* Ensures the logo takes up the available width */
-    max-width: 120px;   /* Set a maximum width (adjust this based on your design) */
-    height: auto;       /* Maintain aspect ratio */
+.eye {
+    position: absolute;
+    top: 40%; /* المسافة من أعلى الشاشة */
+    left: 70%; /* المسافة من الجانب الأيسر */
+    width: 300px; /* عرض العين */
+    height: 150px; /* ارتفاع العين */
+    border-radius: 150px;
+    background: #fff;
+    border: 5px solid #000;
+    overflow: hidden;
+    z-index: 10; /* ضمان أن تظهر العين فوق باقي المحتوى */
 }
 
-/* Specific logo size adjustments for various screens */
-@media (min-width: 1200px) { /* Large screens */
-    #image {
-        height: 80px; /* Larger logo for big screens */
-    }
+.video {
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 768px) { /* Tablets */
-    #image {
-        height: 60px; /* Medium-sized logo */
-    }
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-@media (max-width: 480px) { /* Small screens */
-    #image {
-        height: 40px; /* Small logo for mobile screens */
-    }
-}
-/* تعيين خصائص الشعار ليكون متجاوبًا */
-.header-links img {
-    width: 100%;       /* الشعار يأخذ العرض المتاح */
-    max-width: 120px;  /* أقصى عرض ممكن للشعار */
-    height: auto;      /* الحفاظ على النسب بين العرض والارتفاع */
-}
-
-/* على الشاشات الكبيرة (مثل أجهزة الكمبيوتر) */
-@media (min-width: 1200px) {
-    #image {
-        max-width: 150px; /* حجم الشعار على الشاشات الكبيرة */
-    }
-}
-
-/* على الشاشات المتوسطة (مثل الأجهزة اللوحية) */
-@media (max-width: 768px) {
-    #image {
-        max-width: 100px; /* حجم الشعار على الأجهزة اللوحية */
-    }
-}
-
-/* على الشاشات الصغيرة (مثل الهواتف المحمولة) */
-@media (max-width: 480px) {
-    #image {
-        max-width: 80px;  /* حجم الشعار على الهواتف المحمولة */
-    }
+.button:hover {
+    background-color: darkblue;
 }
